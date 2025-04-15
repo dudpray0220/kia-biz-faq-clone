@@ -1,7 +1,9 @@
+import FaqPage from '@/app/faq/FaqPage';
+
 export default function Home() {
   return (
     <div>
-      <h1>KIA FAQ</h1>
+      <FaqPage />
     </div>
   );
 }

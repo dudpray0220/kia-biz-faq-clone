@@ -1,0 +1,18 @@
+.title {
+  display: flex;
+  flex-direction: column;
+  font-size: var(--h1-fsize);
+  height: var(--h1-height);
+  justify-content: center;
+  line-height: var(--line-height-sm);
+}
+
+.title em {
+  font-size: var(--h1-fsize-sm);
+  font-weight: 400;
+  line-height: 1.6;
+  line-height: var(--line-height-md);
+  margin-top: 0.4em;
+  word-break: keep-all;
+  font-style: normal;
+}

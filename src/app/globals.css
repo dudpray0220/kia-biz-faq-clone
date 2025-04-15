@@ -7,19 +7,19 @@
 /* Font ************************************************************ */
 @font-face {
   font-display: swap;
-  font-family: Kia Signature Fix;
+  font-family: Kia Signature Fix Light;
   src: url(/public/fonts/KiaSignatureFixLight.ttf) format('truetype');
   font-weight: 300;
 }
 @font-face {
   font-display: swap;
-  font-family: Kia Signature Fix;
+  font-family: Kia Signature Fix Regular;
   src: url(/public/fonts/KiaSignatureFixRegular.ttf) format('truetype');
   font-weight: 400;
 }
 @font-face {
   font-display: swap;
-  font-family: Kia Signature Fix;
+  font-family: Kia Signature Fix Bold;
   src: url(/public/fonts/KiaSignatureFixBold.ttf) format('truetype');
   font-weight: 600;
 }
@@ -297,10 +297,6 @@
 }
 
 html,
-body {
-  font-family: 'Kia Signature Fix Regular', Arial, sans-serif, Helvetica;
-}
-
 .layout,
 h1,
 h2,
