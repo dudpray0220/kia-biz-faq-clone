@@ -3,6 +3,7 @@
   color: #82898f;
   padding: 0 48px;
   position: relative;
+  font-family: 'Kia Signature Fix Regular', Arial, sans-serif, Helvetica;
 }
 
 .inner {
@@ -52,6 +53,10 @@
   margin-left: 12px;
   display: inline-flex;
   font-style: normal;
+}
+
+.address span > em {
+  margin-left: 12px;
 }
 
 .address a {

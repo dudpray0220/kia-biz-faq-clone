@@ -12,17 +12,20 @@
 }
 
 @font-face {
-  font-family: 'Kia Signature Fix';
+  font-family: 'Kia Signature Fix Bold';
+  src: url('/fonts/KiaSignatureFixBold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Kia Signature Fix Regular';
   src: url('/fonts/KiaSignatureFixRegular.ttf') format('truetype');
 }
 
 html,
 body {
-  font-family: 'Kia Signature Fix', Arial, sans-serif, Helvetica;
+  font-family: 'Kia Signature Fix Regular', Arial, sans-serif, Helvetica;
 }
 
-.header,
-.footer,
 .layout,
 h1,
 h2,

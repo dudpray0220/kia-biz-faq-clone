@@ -13,16 +13,16 @@ export default function Header() {
         <nav className={styles.nav}>
           <ul>
             <li>
-              <Link href="/Guide">서비스 소개</Link>
+              <Link href="/">서비스 소개</Link>
             </li>
             <li>
-              <Link href="/FAQ">자주 묻는 질문</Link>
+              <Link href="/">자주 묻는 질문</Link>
             </li>
             <li>
-              <Link href="/News">새소식</Link>
+              <Link href="/">새소식</Link>
             </li>
             <li>
-              <Link href="/Counsel">상담문의</Link>
+              <Link href="/">상담문의</Link>
             </li>
           </ul>
         </nav>

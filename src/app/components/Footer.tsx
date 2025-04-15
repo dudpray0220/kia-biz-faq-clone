@@ -32,10 +32,7 @@ export default function Footer() {
             </span>
           </address>
         </div>
-        <p className={styles.copyright}>
-          © 2023 KIA CORP. All
-          <br /> Rights Reserved.
-        </p>
+        <p className={styles.copyright}>© 2023 KIA CORP. All Rights Reserved.</p>
       </div>
     </footer>
   );
