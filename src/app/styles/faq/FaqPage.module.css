@@ -3,3 +3,8 @@
   overflow: hidden;
   padding: 0 var(--side-padding) var(--bottom-padding);
 }
+
+.faqContent {
+  margin: 0 auto;
+  max-width: 1240px;
+}

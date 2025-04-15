@@ -1,0 +1,27 @@
+.tabNav {
+  display: flex;
+  box-sizing: border-box;
+  width: 100%;
+  margin-bottom: var(--px-lg);
+}
+
+.tabButton {
+  background-color: #fff;
+  border: 0.5px solid var(--midnight-100);
+  flex: 1 1;
+  font-size: var(--tab-fsize);
+  min-height: var(--btn-xlg2);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.active {
+  background-color: var(--midnight-900);
+  border-color: var(--midnight-900);
+  color: #fff;
+  font-weight: 600;
+  position: relative;
+}
