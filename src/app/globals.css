@@ -4,11 +4,40 @@
   margin: 0;
 }
 
-@font-face {
-  font-family: 'Kia Signature Fix';
-  src: url('/fonts/KiaSignatureFixBold.ttf') format('truetype');
+:root {
+  --font-sm: 12px;
+  --font-md: 14px;
+  --font-lg: 16px;
+  --line-height: 24px;
 }
 
+@font-face {
+  font-family: 'Kia Signature Fix';
+  src: url('/fonts/KiaSignatureFixRegular.ttf') format('truetype');
+}
+
+html,
 body {
   font-family: 'Kia Signature Fix', Arial, sans-serif, Helvetica;
+}
+
+.header,
+.footer,
+.layout,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span,
+div,
+a,
+button,
+input,
+textarea,
+select,
+option {
+  font-family: inherit;
 }

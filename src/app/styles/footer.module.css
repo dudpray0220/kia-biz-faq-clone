@@ -1,7 +1,76 @@
 .footer {
-  background-color: #f2f2f2;
-  color: #555;
-  text-align: center;
-  padding: 20px;
+  background-color: #05141f;
+  color: #82898f;
+  padding: 0 48px;
+  position: relative;
+}
+
+.inner {
+  display: flex;
+  align-items: center;
+  flex-direction: row-reverse;
   font-size: 14px;
+  height: 176px;
+  justify-content: space-between;
+  line-height: 24px;
+  margin: 0 auto;
+  max-width: 1660px;
+}
+
+.information {
+  display: flex;
+  flex-direction: column;
+}
+
+.util {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 10px;
+}
+
+.util button {
+  background: none;
+  border: none;
+  line-height: var(--line-height);
+  margin-left: 24px;
+  color: #fff;
+  font-size: var(--font-lg);
+  cursor: pointer;
+}
+
+.address {
+  text-align: right;
+}
+
+.address em,
+.address i {
+  font-style: normal;
+}
+
+.address span {
+  color: inherit;
+  margin-left: 12px;
+  display: inline-flex;
+  font-style: normal;
+}
+
+.address a {
+  color: inherit;
+  text-decoration: underline;
+}
+
+.copyright {
+  font-size: var(--font-md);
+  position: relative;
+}
+
+.copyright::before {
+  content: '';
+  display: block;
+  background-image: url('/images/logo_kia_footer.svg');
+  background-repeat: no-repeat;
+  background-size: auto 100%;
+  width: 140px;
+  height: 56px;
+  margin-bottom: 2px;
 }
