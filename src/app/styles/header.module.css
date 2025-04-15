@@ -1,0 +1,72 @@
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background-color: #fff;
+  padding: 0 48px;
+}
+
+/* 내부 정렬 */
+.inner {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  height: 80px;
+  margin: 0 auto;
+  max-width: 1660px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  width: 140px;
+}
+
+.logoImg {
+  background-position: 0 50%;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  font-size: 0;
+}
+
+/* 네비게이션 */
+.nav {
+  flex: 1 1;
+  margin-right: -20px;
+}
+
+.nav ul {
+  display: flex;
+  justify-content: flex-end;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.nav ul li {
+  margin: 0 16px;
+}
+
+.nav ul li a {
+  color: #000;
+  display: block;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 80px;
+  padding: 0 4px;
+  position: relative;
+  text-decoration: none;
+  font-family: var(--font-primary);
+}
+
+/* 유틸 영역 */
+.util {
+  display: none;
+}
+
+.menuBtn {
+  background: none;
+  border: none;
+  cursor: pointer;
+}

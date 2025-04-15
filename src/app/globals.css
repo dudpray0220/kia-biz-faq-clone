@@ -1,6 +1,14 @@
-/* 전역 스타일 리셋 */
 * {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+}
+
+@font-face {
+  font-family: 'Kia Signature Fix';
+  src: url('/fonts/KiaSignatureFixBold.ttf') format('truetype');
+}
+
+body {
+  font-family: 'Kia Signature Fix', Arial, sans-serif, Helvetica;
 }
