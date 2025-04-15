@@ -46,6 +46,10 @@
   --gray-100: #e6e8e9;
   --gray-50: #f6f6f9;
   --gray-10: #f8f8f8;
+  --font-sm: 12px;
+  --font-md: 14px;
+  --font-lg: 16px;
+  --line-height: 24px;
 }
 @media (max-width: 743px) {
   :root {
