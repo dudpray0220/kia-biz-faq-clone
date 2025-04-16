@@ -4,3 +4,11 @@ export interface Category {
   categoryID: string;
   name: string;
 }
+
+export interface FaqItem {
+  id: number;
+  categoryName: string;
+  subCategoryName: string;
+  question: string;
+  answer: string;
+}

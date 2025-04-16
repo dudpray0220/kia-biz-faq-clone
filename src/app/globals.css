@@ -4,6 +4,10 @@
   margin: 0;
 }
 
+body {
+  min-width: 360px;
+}
+
 /* Font ************************************************************ */
 @font-face {
   font-display: swap;
@@ -294,24 +298,4 @@
     --faq-list-a-size: 20px;
     --faq-list-q-padding: 32px 40px;
   }
-}
-
-html,
-.layout,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-span,
-div,
-a,
-button,
-input,
-textarea,
-select,
-option {
-  font-family: inherit;
 }
