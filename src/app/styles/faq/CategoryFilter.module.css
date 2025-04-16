@@ -1,0 +1,32 @@
+.categoryFilter {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: var(--px-md);
+  margin-right: -2px;
+}
+
+.categoryButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: #fff;
+  border: none;
+  border-radius: calc(var(--btn-md) / 2);
+  cursor: pointer;
+
+  -webkit-tap-highlight-color: transparent;
+  height: var(--btn-md);
+  margin-right: 2px;
+  font-size: var(--input-md-fsize) + 1px;
+  font-weight: 600;
+
+  min-width: var(--btn-md);
+  padding: 0 var(--space-sm);
+}
+
+.active {
+  background-color: var(--midnight-900);
+  border-color: var(--midnight-900);
+  color: #fff;
+}
