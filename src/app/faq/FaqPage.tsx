@@ -9,6 +9,7 @@ import FaqHeader from './FaqHeader';
 import styles from '@/app/styles/faq/FaqPage.module.css';
 import CategoryFilter from './CategoryFilter';
 import SearchBar from '@/app/faq/SearchBar';
+import FaqList from '@/app/faq/FaqList';
 
 export default function FaqPage() {
   const [activeTab, setActiveTab] = useState<MainTab>('서비스 도입');
@@ -62,7 +63,7 @@ export default function FaqPage() {
           activeTab={activeTab}
           onChange={(tab) => {
             setActiveTab(tab);
-            setSelectedCategory('전체');
+            handleResetSearch();
           }}
         />
         <SearchBar
@@ -78,6 +79,7 @@ export default function FaqPage() {
           selectedCategory={selectedCategory}
           onChange={setSelectedCategory}
         />
+        <FaqList items={filteredFaq} />
       </div>
     </div>
   );

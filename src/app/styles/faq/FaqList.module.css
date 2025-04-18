@@ -1,0 +1,29 @@
+.container {
+  border-top: 2px solid var(--midnight-900);
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+}
+
+.empty {
+  text-align: center;
+  color: var(--gray-700);
+  font-size: var(--heading-info);
+  padding: var(--space-box2) 0;
+  font-family: var(--font-family-kia-regular);
+  text-align: center;
+}
+
+.empty img {
+  width: 56px;
+  height: 56px;
+}
+
+.emptyText {
+  color: var(--gray-500);
+  line-height: var(--line-height-md);
+  margin-top: var(--space-xsm);
+}
