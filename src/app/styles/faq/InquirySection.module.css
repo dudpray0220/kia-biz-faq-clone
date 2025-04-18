@@ -1,0 +1,58 @@
+.inquirySection {
+  margin: var(--heading-2-margin);
+  font-family: var(--font-family-kia-bold);
+}
+
+.title {
+  font-size: var(--heading-2);
+  margin-bottom: 24px;
+}
+
+.buttonWrap {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  margin: 0 calc(var(--space-md) * -1 / 2);
+}
+
+.inquiryButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+  border: 1px solid var(--midnight-900);
+  color: var(--midnight-900);
+  text-decoration: none;
+  transition: background-color 0.25s ease;
+
+  font-size: var(--btn-xxlg-size);
+  min-height: var(--btn-xxlg);
+  padding: 0 1.4em;
+
+  flex: 1 1;
+  margin: 0 calc(var(--space-md) / 2);
+}
+
+.inquiryButton:hover {
+  background: var(--gray-50);
+}
+
+.icon {
+  width: var(--ic-lg);
+  height: var(--ic-lg);
+  margin-right: 8px;
+}
+
+.textWrap {
+  display: inline-block;
+  text-align: left;
+}
+
+.iconEm {
+  font-family: var(--font-family-kia-regular);
+  color: var(--gray-500);
+  display: block;
+  font-size: 14px;
+  font-style: normal;
+  line-height: 1.4;
+}

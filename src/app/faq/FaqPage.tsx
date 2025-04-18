@@ -10,6 +10,7 @@ import styles from '@/app/styles/faq/FaqPage.module.css';
 import CategoryFilter from './CategoryFilter';
 import SearchBar from '@/app/faq/SearchBar';
 import FaqList from '@/app/faq/FaqList';
+import InquirySection from '@/app/faq/InquirySection';
 
 export default function FaqPage() {
   const [activeTab, setActiveTab] = useState<MainTab>('서비스 도입');
@@ -80,6 +81,7 @@ export default function FaqPage() {
           onChange={setSelectedCategory}
         />
         <FaqList items={filteredFaq} />
+        <InquirySection />
       </div>
     </div>
   );
