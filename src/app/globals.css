@@ -6,6 +6,7 @@
 
 body {
   min-width: 360px;
+  font-family: var(--font-family-base);
 }
 
 /* Font ************************************************************ */
@@ -30,6 +31,13 @@ body {
 
 /* Breakpoints & Var ************************************************************ */
 :root {
+  --font-family-kia-light: 'Kia Signature Fix Light', Arial, sans-serif;
+  --font-family-kia-regular: 'Kia Signature Fix Regular', Arial, sans-serif;
+  --font-family-kia-bold: 'Kia Signature Fix Bold', Arial, sans-serif;
+
+  /* 기본 적용용 */
+  --font-family-base: var(--font-family-kia-regular);
+
   --max-width: 1660px;
   --line-height-sm: 1.4;
   --line-height-md: 1.6;

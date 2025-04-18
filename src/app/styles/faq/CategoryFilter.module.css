@@ -17,9 +17,9 @@
 
   -webkit-tap-highlight-color: transparent;
   height: var(--btn-md);
-  margin-right: 2px;
   font-size: var(--input-md-fsize) + 1px;
   font-weight: 600;
+  font-family: var(--font-family-kia-bold);
 
   min-width: var(--btn-md);
   padding: 0 var(--space-sm);

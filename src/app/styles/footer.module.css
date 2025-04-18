@@ -3,7 +3,7 @@
   color: var(--gray-400);
   padding: 0 var(--side-padding);
   position: relative;
-  font-family: 'Kia Signature Fix Regular', Arial, sans-serif, Helvetica;
+  font-family: var(--font-family-kia-regular);
 }
 
 .inner {

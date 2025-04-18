@@ -25,6 +25,11 @@
   outline: none;
   background: transparent;
   height: 100%;
+  font-family: var(--font-family-kia-regular);
+}
+.input::placeholder {
+  color: var(--gray-300);
+  opacity: 1;
 }
 
 .searchBtn,

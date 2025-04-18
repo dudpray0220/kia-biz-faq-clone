@@ -4,7 +4,7 @@
   z-index: 100;
   background-color: #fff;
   padding: 0 48px;
-  font-family: 'Kia Signature Fix Bold', Arial, sans-serif, Helvetica;
+  font-family: var(--font-family-kia-bold);
 }
 
 /* 내부 정렬 */
