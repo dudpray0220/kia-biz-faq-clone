@@ -1,0 +1,40 @@
+.scrollButton {
+  position: fixed;
+  right: 24px;
+  bottom: clamp(24px, 5vh, 80px);
+  z-index: 999;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: var(--size);
+  height: var(--size);
+  border: none;
+  border-radius: 50%;
+  background-color: #fff;
+  box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.12);
+  padding: 12px;
+  cursor: pointer;
+
+  opacity: 0;
+  transform: scale(0);
+  transition: opacity 0.2s ease, transform 0.3s cubic-bezier(0.6, 0.06, 1, 0.88);
+  pointer-events: none;
+}
+
+.visible {
+  opacity: 1;
+  transform: scale(1);
+  pointer-events: auto;
+}
+
+.scrollButton img {
+  width: calc(var(--size) / 2 - 2px);
+  height: calc(var(--size) / 2 - 2px);
+  transition: transform 0.2s ease;
+}
+
+.scrollButton:active img {
+  transform: translateY(2px);
+}

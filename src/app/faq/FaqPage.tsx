@@ -13,6 +13,7 @@ import FaqList from '@/app/faq/FaqList';
 import InquirySection from '@/app/faq/InquirySection';
 import ProcessSection from '@/app/faq/ProcessSection';
 import AppDownloadSection from '@/app/faq/AppDownloadSection';
+import ScrollTopButton from '@/app/faq/ScrollTopButton';
 
 export default function FaqPage() {
   const [activeTab, setActiveTab] = useState<MainTab>('서비스 도입');
@@ -86,6 +87,7 @@ export default function FaqPage() {
         <InquirySection />
         <ProcessSection />
         <AppDownloadSection />
+        <ScrollTopButton />
       </div>
     </div>
   );

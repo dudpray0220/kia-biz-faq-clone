@@ -66,6 +66,7 @@ body {
 @media (max-width: 743px) {
   :root {
     font-size: 14px;
+    --size: 40px;
     --px-md: 16px;
     --px-lg: 24px;
     --px-xlg: 32px;
@@ -127,6 +128,7 @@ body {
 @media (min-width: 744px) and (max-width: 1023px) {
   :root {
     font-size: 16px;
+    --size: 48px;
     --px-md: 16px;
     --px-lg: 32px;
     --px-xlg: 56px;
@@ -188,6 +190,7 @@ body {
 @media (min-width: 1024px) and (max-width: 1439px) {
   :root {
     font-size: 18px;
+    --size: 56px;
     --px-md: 20px;
     --px-lg: 40px;
     --px-xlg: 64px;
