@@ -1,0 +1,56 @@
+.appSection {
+  background-color: var(--gray-10);
+  border-radius: 16px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 48px;
+  overflow: hidden;
+  padding: 32px;
+  font-family: var(--font-family-kia-bold);
+}
+
+.title {
+  font-size: 24px;
+  line-height: var(--line-height-sm);
+  margin-bottom: 24px;
+  text-align: center;
+  width: 100%;
+}
+
+.buttonWrap {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.storeButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px 32px;
+  border-radius: 8px;
+  background: #fff;
+  color: var(--midnight-900);
+  border: none;
+  text-decoration: none;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
+  transition: background 0.2s ease;
+
+  font-size: 16px;
+  font-weight: 600;
+  height: 60px;
+  margin: 0 8px;
+  width: 296px;
+}
+
+.storeButton:hover {
+  background: var(--gray-50);
+}
+
+.icon {
+  width: 28px;
+  height: 28px;
+  margin-right: 12px;
+}
