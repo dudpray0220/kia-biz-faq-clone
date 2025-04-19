@@ -42,7 +42,7 @@ const ScrollTopButton = () => {
       onClick={scrollToTop}
       aria-label="맨 위로 이동"
     >
-      <img src="/images/top_arrow.svg" alt="맨 위로" />
+      <img src="/images/top_arrow.svg" alt="맨 위로" draggable="false" />
     </button>
   );
 };
