@@ -77,5 +77,112 @@
   background-size: auto 100%;
   width: 140px;
   height: 56px;
-  margin-bottom: 2px;
+}
+
+/* 1023px 이하 (태블릿) */
+@media (max-width: 1023px) {
+  .inner {
+    flex-direction: column;
+    align-items: flex-start;
+    height: auto;
+    padding-bottom: 44px;
+    padding-top: 34px;
+  }
+
+  .information {
+    order: 1;
+    width: 100%;
+  }
+
+  .util {
+    justify-content: flex-start;
+    margin-bottom: 16px;
+  }
+
+  .util button {
+    margin-left: 0;
+    margin-right: 24px;
+  }
+
+  .address {
+    text-align: left;
+  }
+
+  .address span {
+    margin-left: 0;
+    margin-right: 8px;
+    display: inline-block;
+    line-height: 1.8;
+    width: auto;
+    max-width: 33%;
+  }
+
+  .address span:nth-child(2n) {
+    margin-right: 0;
+  }
+
+  .address span:nth-child(3n) {
+    margin-right: 0;
+  }
+
+  .address span:nth-child(3) {
+    display: block;
+    max-width: 100%;
+  }
+
+  .copyright {
+    order: 2;
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .copyright::before {
+    height: 48px;
+  }
+}
+
+/* 743px 이하 (모바일) */
+@media (max-width: 743px) {
+  .inner {
+    padding: 24px 0;
+  }
+
+  .util button {
+    margin-right: 16px;
+    font-size: 14px;
+  }
+
+  .address span {
+    display: block;
+    margin-right: 0;
+    max-width: 100%;
+    font-size: 12px;
+  }
+
+  .address span:nth-child(5),
+  .address span:nth-child(6) {
+    display: inline-block;
+    margin-right: 8px;
+  }
+
+  .address span:nth-child(6) {
+    margin-right: 0;
+  }
+
+  .address {
+    margin-bottom: 20px;
+  }
+
+  .copyright {
+    margin-top: 10px;
+    font-size: 12px;
+  }
+
+  .copyright::before {
+    width: 100px;
+    height: 32px;
+  }
 }
