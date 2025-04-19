@@ -8,7 +8,7 @@
   background: none;
   border: none;
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-between;
   align-items: center;
   cursor: pointer;
 
@@ -25,6 +25,12 @@
   background-color: var(--gray-10);
 }
 
+.questionWrapper {
+  display: flex;
+  align-items: center;
+  flex: 1;
+}
+
 .category {
   font-size: var(--faq-list-a-size);
   line-height: var(--line-height-sm);
@@ -33,6 +39,7 @@
   color: var(--gray-500);
   padding: 0 var(--faq-list-a-padding-h);
   width: 8em;
+  flex-shrink: 0;
   font-family: var(--font-family-kia-regular);
 }
 
@@ -48,14 +55,16 @@
   padding-left: var(--faq-list-a-padding-h);
   text-align: left;
   font-family: var(--font-family-kia-bold);
+  font-size: var(--faq-list-a-size);
 }
 
 .arrow {
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: transform 0.25s ease;
+  transition: transform 0.4s ease-in-out;
   margin-left: 12px;
+  flex-shrink: 0; /* 화살표 크기 고정 */
 }
 
 .arrowOpen {
@@ -70,7 +79,7 @@
 .answerWrap {
   max-height: 0;
   overflow: hidden;
-  transition: max-height 0.25s cubic-bezier(0.6, 0.06, 1, 0.88);
+  transition: max-height 0.4s ease-in-out;
 }
 
 .expanded {
@@ -87,4 +96,50 @@
 
 .answer * {
   all: revert;
+}
+
+/* 1024px 이하일 때 (태블릿) */
+@media (max-width: 1023px) {
+  .questionWrapper {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .category {
+    width: auto;
+    padding: 0 0 4px 0;
+    margin-bottom: 2px;
+    font-size: calc(1em - 4px);
+    line-height: var(--line-height-md);
+  }
+
+  .title {
+    padding-left: 0;
+  }
+
+  .content {
+    width: 100%;
+    padding-left: 0;
+  }
+
+  .arrow {
+    align-self: center; /* 화살표를 중앙에 위치 */
+  }
+
+  .arrowIcon {
+    width: 28px;
+    height: 28px;
+  }
+
+  .answer {
+    font-size: 1rem;
+  }
+}
+
+/* 744px 이하일 때 (모바일) */
+@media (max-width: 743px) {
+  .arrowIcon {
+    width: 24px;
+    height: 24px;
+  }
 }

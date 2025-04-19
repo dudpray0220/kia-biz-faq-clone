@@ -18,13 +18,15 @@ const FaqItem = ({ item, isOpen, onToggle }: Props) => {
         className={`${styles.question} ${isOpen ? styles.open : ''}`}
         onClick={() => onToggle(item.id)}
       >
-        <span className={styles.category}>{item.subCategoryName}</span>
-        <div className={styles.content}>
-          <span className={styles.title}>{item.question}</span>
-          <span className={`${styles.arrow} ${isOpen ? styles.arrowOpen : ''}`}>
-            <img src="/images/down_arrow.svg" alt="화살표" className={styles.arrowIcon} />
-          </span>
+        <div className={styles.questionWrapper}>
+          <span className={styles.category}>{item.subCategoryName}</span>
+          <div className={styles.content}>
+            <span className={styles.title}>{item.question}</span>
+          </div>
         </div>
+        <span className={`${styles.arrow} ${isOpen ? styles.arrowOpen : ''}`}>
+          <img src="/images/down_arrow.svg" alt="화살표" className={styles.arrowIcon} />
+        </span>
       </button>
 
       <div className={`${styles.answerWrap} ${isOpen ? styles.expanded : ''}`}>
