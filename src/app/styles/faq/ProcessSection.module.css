@@ -10,7 +10,7 @@
 
 .processList {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   list-style: none;
   flex-wrap: wrap;
   gap: 24px;
@@ -45,9 +45,67 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  margin: 0 10px;
+  align-self: center;
 }
 
 .arrowIcon {
   width: 24px;
   height: 24px;
+}
+
+/* 미디어 쿼리 추가 - 태블릿과 모바일에서 세로 배치 */
+@media (max-width: 1023px) {
+  .processList {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 32px; /* 각 단계 사이 간격 늘림 */
+  }
+
+  .processItem {
+    display: block; /* 블록 레이아웃으로 변경 */
+    width: 100%;
+    margin: 0;
+    padding: 0 0 0 60px; /* 왼쪽 여백 추가 */
+    position: relative; /* 아이콘 절대 위치 기준 */
+  }
+
+  .icon {
+    position: absolute;
+    left: 0;
+    top: 0;
+    margin-bottom: 0;
+  }
+
+  .stepTitle {
+    margin-bottom: 8px;
+  }
+
+  .description {
+    margin-top: 4px;
+  }
+
+  .arrowItem {
+    display: none; /* 화살표 숨기기 */
+  }
+}
+
+/* 모바일에서 더 작은 아이콘과 폰트 크기 */
+@media (max-width: 743px) {
+  .processItem {
+    padding: 0 0 0 50px;
+  }
+
+  .icon {
+    height: 40px;
+    width: 40px;
+  }
+
+  .stepTitle {
+    font-size: 16px;
+  }
+
+  .description {
+    font-size: 14px;
+  }
 }
