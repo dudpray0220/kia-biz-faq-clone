@@ -5,6 +5,7 @@
   height: var(--h1-height);
   justify-content: center;
   line-height: var(--line-height-sm);
+  font-family: var(--font-family-kia-bold);
 }
 
 .title em {
@@ -15,4 +16,5 @@
   margin-top: 0.4em;
   word-break: keep-all;
   font-style: normal;
+  font-family: var(--font-family-kia-regular);
 }
