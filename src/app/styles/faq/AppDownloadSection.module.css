@@ -54,3 +54,29 @@
   height: 28px;
   margin-right: 12px;
 }
+
+/* 미디어 쿼리 추가 */
+@media (max-width: 1023px) {
+  .title {
+    font-size: 20px;
+  }
+
+  .storeButton {
+    font-size: 14px;
+    height: 56px;
+    width: 264px;
+  }
+}
+
+@media (max-width: 743px) {
+  .title {
+    font-size: 16px;
+  }
+
+  .storeButton {
+    font-size: 14px;
+    height: 48px;
+    max-width: 264px;
+    width: 100%;
+  }
+}
