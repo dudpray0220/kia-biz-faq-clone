@@ -1,0 +1,53 @@
+.processSection {
+  margin: var(--heading-2-margin);
+  font-family: var(--font-family-kia-bold);
+}
+
+.title {
+  font-size: var(--heading-2);
+  margin-bottom: 24px;
+}
+
+.processList {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+
+.processItem {
+  flex: 1 1;
+  margin: 0 calc(var(--space-md) / 2);
+  padding: 0 0 0 24px;
+}
+
+.icon {
+  display: block;
+  height: var(--ic-xlg);
+  width: var(--ic-xlg);
+  margin-bottom: 8px;
+}
+
+.stepTitle {
+  display: block;
+  font-size: 18px;
+}
+
+.description {
+  color: var(--gray-700);
+  font-size: 16px;
+  margin-top: 8px;
+  font-family: var(--font-family-kia-regular);
+}
+
+.arrowItem {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.arrowIcon {
+  width: 24px;
+  height: 24px;
+}

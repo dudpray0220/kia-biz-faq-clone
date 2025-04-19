@@ -11,6 +11,7 @@ import CategoryFilter from './CategoryFilter';
 import SearchBar from '@/app/faq/SearchBar';
 import FaqList from '@/app/faq/FaqList';
 import InquirySection from '@/app/faq/InquirySection';
+import ProcessSection from '@/app/faq/ProcessSection';
 
 export default function FaqPage() {
   const [activeTab, setActiveTab] = useState<MainTab>('서비스 도입');
@@ -82,6 +83,7 @@ export default function FaqPage() {
         />
         <FaqList items={filteredFaq} />
         <InquirySection />
+        <ProcessSection />
       </div>
     </div>
   );
