@@ -3,8 +3,13 @@
   top: 0;
   z-index: 100;
   background-color: #fff;
-  padding: 0 48px;
+  padding: 0 var(--side-padding);
   font-family: var(--font-family-kia-bold);
+  transition: box-shadow 0.3s ease;
+}
+
+.header.scrolled {
+  box-shadow: 0 4px 32px 0 rgba(0, 0, 0, 0.08);
 }
 
 /* 내부 정렬 */
@@ -15,26 +20,25 @@
   height: var(--header-height);
   margin: 0 auto;
   max-width: var(--max-width);
+  position: relative;
+  justify-content: space-between;
 }
 
 .logo {
   display: flex;
   align-items: center;
   height: 100%;
-  width: 140px;
+  z-index: 101;
 }
 
 .logoImg {
-  background-position: 0 50%;
-  background-repeat: no-repeat;
-  background-size: 100% auto;
-  font-size: 0;
+  width: 140px;
+  height: auto;
 }
 
-/* 네비게이션 */
+/* 데스크톱 네비게이션 */
 .nav {
   flex: 1 1;
-  margin-right: -20px;
 }
 
 .nav ul {
@@ -49,6 +53,11 @@
   margin: 0 16px;
 }
 
+.nav ul li:last-child {
+  margin-left: 16px;
+  margin-right: 0;
+}
+
 .nav ul li a {
   color: #000;
   display: block;
@@ -60,13 +69,111 @@
   text-decoration: none;
 }
 
-/* 유틸 영역 */
-.util {
-  display: none;
+/* 모바일 메뉴 토글 버튼 (햄버거) */
+.utilArea {
+  display: flex;
+  align-items: center;
 }
 
 .menuBtn {
+  display: none;
   background: none;
   border: none;
   cursor: pointer;
+  width: 30px;
+  height: 30px;
+  position: relative;
+  z-index: 101;
+}
+
+.menuBar {
+  display: block;
+  width: 24px;
+  height: 2px;
+  background-color: #000;
+  margin: 5px auto;
+  transition: all 0.3s ease-in-out;
+}
+
+/* X 모양으로 변형 시 스타일 */
+.menuBtn.active .menuBar:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+.menuBtn.active .menuBar:nth-child(2) {
+  opacity: 0;
+}
+
+.menuBtn.active .menuBar:nth-child(3) {
+  transform: rotate(-45deg) translate(5px, -5px);
+}
+
+.srOnly {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* 모바일 메뉴 */
+.mobileMenu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: #fff;
+  z-index: 100;
+  transform: translateX(-100%);
+  transition: transform 0.4s ease-in-out;
+  overflow-y: auto;
+}
+
+.mobileMenu.open {
+  transform: translateX(0);
+}
+
+.mobileMenuInner {
+  padding: 100px 20px 20px;
+  height: 100%;
+}
+
+.mobileNav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.mobileNav ul li {
+  margin: 20px 0;
+  text-align: center;
+}
+
+.mobileNav ul li a {
+  color: #000;
+  font-size: 24px;
+  font-weight: 600;
+  text-decoration: none;
+  display: inline-block;
+  padding: 10px 0;
+}
+
+/* 미디어 쿼리 */
+@media (max-width: 1023px) {
+  .nav {
+    display: none;
+  }
+
+  .menuBtn {
+    display: block;
+  }
+
+  .logoImg {
+    width: 110px;
+  }
 }
