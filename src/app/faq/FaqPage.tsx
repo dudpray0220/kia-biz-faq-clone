@@ -18,9 +18,10 @@ import ScrollTopButton from '@/app/faq/ScrollTopButton';
 export default function FaqPage() {
   const [activeTab, setActiveTab] = useState<MainTab>('서비스 도입');
   const [selectedCategory, setSelectedCategory] = useState<string>('전체');
-  const [inputValue, setInputValue] = useState(''); //	input에 실시간으로 변하는 값
-  const [searchKeyword, setSearchKeyword] = useState(''); // 	검색을 실제 실행했을 때 확정된 값
+  const [inputValue, setInputValue] = useState('');
+  const [searchKeyword, setSearchKeyword] = useState('');
   const [isSearching, setIsSearching] = useState(false);
+  const [visibleCount, setVisibleCount] = useState<number>(3);
 
   const allFaqItems: FaqItem[] = faqJson.items;
 
@@ -67,6 +68,7 @@ export default function FaqPage() {
           activeTab={activeTab}
           onChange={(tab) => {
             setActiveTab(tab);
+            setVisibleCount(3);
             handleResetSearch();
           }}
         />
@@ -83,7 +85,12 @@ export default function FaqPage() {
           selectedCategory={selectedCategory}
           onChange={setSelectedCategory}
         />
-        <FaqList items={filteredFaq} />
+        <FaqList
+          items={filteredFaq}
+          isSearching={isSearching}
+          visibleCount={visibleCount}
+          setVisibleCount={setVisibleCount}
+        />
         <InquirySection />
         <ProcessSection />
         <AppDownloadSection />

@@ -27,3 +27,23 @@
   line-height: var(--line-height-md);
   margin-top: var(--space-xsm);
 }
+
+/* 더보기 버튼 */
+.moreWrap {
+  text-align: center;
+  margin-top: calc(var(--px-lg) - 8px);
+}
+
+.moreButton {
+  background: none;
+  border: none;
+  font-size: var(--list-more-size);
+  color: var(--midnight-900);
+  cursor: pointer;
+  padding: 12px;
+  transition: color 0.2s ease;
+}
+
+.moreButton:hover {
+  color: var(--gray-600);
+}
