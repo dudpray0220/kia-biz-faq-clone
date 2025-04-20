@@ -4,6 +4,8 @@ KIA BIZ 사이트의 FAQ 페이지를 클론한 프로젝트입니다.
 
 자주 묻는 질문과 답변을 카테고리별로 분류하고 검색할 수 있는 인터페이스를 제공합니다.
 
+<br />  
+
 ## 기술 스택
 
 - **Frontend**: Next.js, React 19, TypeScript
