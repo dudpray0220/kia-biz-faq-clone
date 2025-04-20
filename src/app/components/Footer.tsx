@@ -1,6 +1,20 @@
+'use client';
+
+import { useState } from 'react';
 import styles from '@/app/styles/footer.module.css';
+import FooterModal from '@/app/faq/FooterModal';
 
 export default function Footer() {
+  const [modalOpen, setModalOpen] = useState(false);
+
+  const openTermsModal = () => {
+    setModalOpen(true);
+  };
+
+  const closeModal = () => {
+    setModalOpen(false);
+  };
+
   return (
     <footer className={styles.footer}>
       <div className={styles.inner}>
@@ -9,7 +23,9 @@ export default function Footer() {
             <button type="button">
               <b>개인정보 처리방침</b>
             </button>
-            <button type="button">이용약관</button>
+            <button type="button" onClick={openTermsModal}>
+              이용약관
+            </button>
           </span>
           <address className={styles.address}>
             <span>
@@ -34,6 +50,9 @@ export default function Footer() {
         </div>
         <p className={styles.copyright}>© 2023 KIA CORP. All Rights Reserved.</p>
       </div>
+
+      {/* 이용약관 모달 */}
+      <FooterModal isOpen={modalOpen} onClose={closeModal} />
     </footer>
   );
 }

@@ -1,0 +1,179 @@
+.modalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  padding: 0 20px;
+}
+
+.modalContainer {
+  background-color: white;
+  border-radius: 0;
+  width: 100%;
+  max-width: 800px;
+  max-height: 90vh;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  animation: fadeIn 0.3s ease;
+
+  display: flex;
+  flex-direction: column;
+  width: 960px;
+
+  padding: 0 var(--padding);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.modalHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px 20px;
+  padding-bottom: 15px;
+  border-bottom: 2px solid var(--midnight-900);
+}
+
+.title {
+  font-size: var(--font-lg);
+  font-weight: 600;
+  margin: 0;
+
+  align-items: center;
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 16px;
+  color: var(--midnight-900);
+}
+
+.closeButton {
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px;
+}
+
+.closeButton img {
+  width: 24px;
+  height: 24px;
+}
+
+.srOnly {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+.dateSelector {
+  padding: 5px 20px 0 20px;
+}
+
+.dateDisplay {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 15px;
+  border: 1px solid #ddd;
+  cursor: pointer;
+  border: 1px solid var(--gray-200);
+  color: var(--midnight-900);
+  font-size: var(--font-md);
+  width: 100%;
+  appearance: none;
+  background-image: url('/images/down_arrow.svg');
+  background-repeat: no-repeat;
+  background-position: right 15px center;
+  background-size: 20px;
+  padding-right: 40px;
+}
+
+.modalContent {
+  flex: 1;
+  overflow-y: auto;
+  padding: 0 20px 20px 20px;
+}
+
+.modalContent * {
+  all: revert;
+}
+
+.termsContent {
+  line-height: 1.6;
+  color: #333;
+  font-size: 14px;
+}
+
+.termsContent p {
+  margin-bottom: 1em;
+}
+
+.termsContent strong {
+  font-size: var(--font-sm);
+  font-weight: 600;
+}
+
+.loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  color: #666;
+  font-size: var(--font-md);
+}
+
+/* 태블릿 이하 스타일 */
+@media (max-width: 1023px) {
+  .modalContainer {
+    max-width: 600px;
+  }
+}
+
+/* 모바일 스타일 */
+@media (max-width: 743px) {
+  .modalContainer {
+    max-height: 80vh;
+    width: 95%;
+  }
+
+  .title {
+    font-size: calc(var(--font-md) + 2px);
+  }
+
+  .dateSelector {
+    padding: 10px 15px;
+  }
+
+  .dateDisplay {
+    padding: 8px 12px;
+    font-size: var(--font-sm);
+  }
+
+  .modalContent {
+    padding: 15px;
+  }
+}
