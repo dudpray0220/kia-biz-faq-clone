@@ -31,6 +31,8 @@ KIA BIZ 사이트의 FAQ 페이지를 클론한 프로젝트입니다.
   /mock           # 목업 데이터
 /public           # 정적 파일 (이미지, 폰트 등)
 
+kia-faq-clone/ ├── public/ # 정적 파일 (이미지, 폰트, 로고 등) │ └── mock/ # mock 데이터(JSON) │ ├── src/ │ ├── app/ │ │ ├── layout.tsx │ │ ├── page.tsx # 메인 FAQ 페이지 │ │ ├── components/ # 공통 컴포넌트 (헤더, 푸터, 버튼 등) │ │ ├── faq/ # FAQ 전용 컴포넌트 │ │ ├── styles/ # CSS Module 스타일 │ │ └── types/ # TypeScript 타입 정의
+
 
 ## 🚀 실행 방법
 
