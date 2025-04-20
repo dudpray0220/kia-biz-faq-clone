@@ -10,7 +10,8 @@ KIA BIZ 사이트의 FAQ 페이지를 클론한 프로젝트입니다.
 
 - **Frontend**: Next.js, React 19, TypeScript
 - **Styling**: CSS Modules (모듈화된 스타일 적용)
-<br />
+  
+<br />  
 
 ## 주요 기능
 
@@ -21,6 +22,7 @@ KIA BIZ 사이트의 FAQ 페이지를 클론한 프로젝트입니다.
 - 아코디언 스타일 FAQ 목록
 - 앱 다운로드 및 문의하기 섹션
 
+<br />  
 
 ## 프로젝트 구조
 
@@ -34,6 +36,7 @@ KIA BIZ 사이트의 FAQ 페이지를 클론한 프로젝트입니다.
   /mock           # 목업 데이터
 /public           # 정적 파일 (이미지, 폰트 등)
 ```
+<br />  
 
 ## 실행 방법
 
